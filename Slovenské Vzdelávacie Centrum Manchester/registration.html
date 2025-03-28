@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slovenské Vzdelávacie Centrum Manchester - Registration </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <img src="images/logo.png" alt="logo" class="logo2">
+            <h2>Registration</h2>
+
+            <form id="myForm">
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" placeholder="Phone number" required>
+                    <input type="text" placeholder="Address" required>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="window.location.href='index.html'" class="cancel">Cancel</button>
+                    <button type="submit" class="signup">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("myForm").onsubmit = function() {
+            alert("Your information has been successfully received!");
+        };
+        </script>   
+</body>
+</html>
